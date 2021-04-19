@@ -1,6 +1,8 @@
 import React,{useEffect} from 'react'
+import {Link} from "react-router-dom";
 import '../assets/aos/aos.css'
 import AOS from "aos";
+
 import HeroImg from '../assets/img/hero-img.png'
 import AboutImg from '../assets/img/about.jpg'
 import Img1 from '../assets/img/values-1.png'
@@ -49,6 +51,8 @@ import Blog1 from '../assets/img/blog/blog-1.jpg'
 import Blog2 from '../assets/img/blog/blog-2.jpg'
 import Blog3 from '../assets/img/blog/blog-3.jpg'
 
+import Slider from "./Slider";
+
 
 
 
@@ -68,10 +72,10 @@ function Main() {
                 <h2 data-aos="fade-up" data-aos-delay={400}>We are team of talented designers making websites with Bootstrap</h2>
                 <div data-aos="fade-up" data-aos-delay={600}>
                   <div className="text-center text-lg-start">
-                    <a href="#about" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <Link to="#about" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                       <span>Get Started</span>
                       <i className="bi bi-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -81,6 +85,8 @@ function Main() {
             </div>
           </div>
         </section>{/* End Hero */}
+        <Slider/>
+
         <main id="main">
           {/* ======= About Section ======= */}
           <section id="about" className="about">
@@ -94,10 +100,10 @@ function Main() {
                       Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
                     </p>
                     <div className="text-center text-lg-start">
-                      <a href="#" className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                      <Link to="#" className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                         <span>Read More</span>
                         <i className="bi bi-arrow-right" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -241,13 +247,13 @@ function Main() {
                   {/* Tabs */}
                   <ul className="nav nav-pills mb-3">
                     <li>
-                      <a className="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a>
+                      <Link className="nav-link active" data-bs-toggle="pill" to="#tab1">Saepe fuga</Link>
                     </li>
                     <li>
-                      <a className="nav-link" data-bs-toggle="pill" href="#tab2">Voluptates</a>
+                      <Link className="nav-link" data-bs-toggle="pill" to="#tab2">Voluptates</Link>
                     </li>
                     <li>
-                      <a className="nav-link" data-bs-toggle="pill" href="#tab3">Corrupti</a>
+                      <Link className="nav-link" data-bs-toggle="pill" to="#tab3">Corrupti</Link>
                     </li>
                   </ul>{/* End Tabs */}
                   {/* Tab Content */}
@@ -367,7 +373,7 @@ function Main() {
                     <i className="ri-discuss-line icon" />
                     <h3>Nesciunt Mete</h3>
                     <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <a href="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></a>
+                    <Link to="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={300}>
@@ -375,7 +381,7 @@ function Main() {
                     <i className="ri-discuss-line icon" />
                     <h3>Eosle Commodi</h3>
                     <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                    <a href="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></a>
+                    <Link to="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={400}>
@@ -383,7 +389,7 @@ function Main() {
                     <i className="ri-discuss-line icon" />
                     <h3>Ledo Markt</h3>
                     <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                    <a href="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></a>
+                    <Link to="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={500}>
@@ -391,7 +397,7 @@ function Main() {
                     <i className="ri-discuss-line icon" />
                     <h3>Asperiores Commodi</h3>
                     <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                    <a href="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></a>
+                    <Link to="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={600}>
@@ -399,7 +405,7 @@ function Main() {
                     <i className="ri-discuss-line icon" />
                     <h3>Velit Doloremque.</h3>
                     <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                    <a href="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></a>
+                    <Link to="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={700}>
@@ -407,7 +413,7 @@ function Main() {
                     <i className="ri-discuss-line icon" />
                     <h3>Dolori Architecto</h3>
                     <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                    <a href="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></a>
+                    <Link to="#" className="read-more"><span>Read More</span> <i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
               </div>
@@ -433,7 +439,7 @@ function Main() {
                       <li className="na">Pharetra massa</li>
                       <li className="na">Massa ultricies mi</li>
                     </ul>
-                    <a href="#" className="btn-buy">Buy Now</a>
+                    <Link to="#" className="btn-buy">Buy Now</Link>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay={200}>
@@ -449,7 +455,7 @@ function Main() {
                       <li>Pharetra massa</li>
                       <li className="na">Massa ultricies mi</li>
                     </ul>
-                    <a href="#" className="btn-buy">Buy Now</a>
+                    <Link to="#" className="btn-buy">Buy Now</Link>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay={300}>
@@ -464,7 +470,7 @@ function Main() {
                       <li>Pharetra massa</li>
                       <li>Massa ultricies mi</li>
                     </ul>
-                    <a href="#" className="btn-buy">Buy Now</a>
+                    <Link to="#" className="btn-buy">Buy Now</Link>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay={400}>
@@ -479,7 +485,7 @@ function Main() {
                       <li>Pharetra massa</li>
                       <li>Massa ultricies mi</li>
                     </ul>
-                    <a href="#" className="btn-buy">Buy Now</a>
+                    <Link to="#" className="btn-buy">Buy Now</Link>
                   </div>
                 </div>
               </div>
@@ -603,8 +609,8 @@ function Main() {
                       <h4>App 1</h4>
                       <p>App</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio1} data-gallery="portfolioGallery" className="portfokio-lightbox" title="App 1"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio1} data-gallery="portfolioGallery" className="portfokio-lightbox" title="App 1"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -616,8 +622,8 @@ function Main() {
                       <h4>Web 3</h4>
                       <p>Web</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio2} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Web 3"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio2} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Web 3"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -629,8 +635,8 @@ function Main() {
                       <h4>App 2</h4>
                       <p>App</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio3} data-gallery="portfolioGallery" className="portfokio-lightbox" title="App 2"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio3} data-gallery="portfolioGallery" className="portfokio-lightbox" title="App 2"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -642,8 +648,8 @@ function Main() {
                       <h4>Card 2</h4>
                       <p>Card</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio4} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Card 2"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio4} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Card 2"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -655,8 +661,8 @@ function Main() {
                       <h4>Web 2</h4>
                       <p>Web</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio5} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Web 2"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio5} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Web 2"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -668,8 +674,8 @@ function Main() {
                       <h4>App 3</h4>
                       <p>App</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio6} data-gallery="portfolioGallery" className="portfokio-lightbox" title="App 3"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio6} data-gallery="portfolioGallery" className="portfokio-lightbox" title="App 3"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -681,8 +687,8 @@ function Main() {
                       <h4>Card 1</h4>
                       <p>Card</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio7} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Card 1"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio7} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Card 1"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -694,8 +700,8 @@ function Main() {
                       <h4>Card 3</h4>
                       <p>Card</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio8} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Card 3"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio8} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Card 3"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -707,8 +713,8 @@ function Main() {
                       <h4>Web 3</h4>
                       <p>Web</p>
                       <div className="portfolio-links">
-                        <a href={Portfolio9} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Web 3"><i className="bi bi-plus" /></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bi bi-link" /></a>
+                        <Link to={Portfolio9} data-gallery="portfolioGallery" className="portfokio-lightbox" title="Web 3"><i className="bi bi-plus" /></Link>
+                        <Link to="portfolio-details.html" title="More Details"><i className="bi bi-link" /></Link>
                       </div>
                     </div>
                   </div>
@@ -818,10 +824,10 @@ function Main() {
                     <div className="member-img">
                       <img src={Team1} className="img-fluid" alt="" />
                       <div className="social">
-                        <a href><i className="bi bi-twitter" /></a>
-                        <a href><i className="bi bi-facebook" /></a>
-                        <a href><i className="bi bi-instagram" /></a>
-                        <a href><i className="bi bi-linkedin" /></a>
+                        <Link to><i className="bi bi-twitter" /></Link>
+                        <Link to><i className="bi bi-facebook" /></Link>
+                        <Link to><i className="bi bi-instagram" /></Link>
+                        <Link to><i className="bi bi-linkedin" /></Link>
                       </div>
                     </div>
                     <div className="member-info">
@@ -836,10 +842,10 @@ function Main() {
                     <div className="member-img">
                       <img src={Team2} className="img-fluid" alt="" />
                       <div className="social">
-                        <a href><i className="bi bi-twitter" /></a>
-                        <a href><i className="bi bi-facebook" /></a>
-                        <a href><i className="bi bi-instagram" /></a>
-                        <a href><i className="bi bi-linkedin" /></a>
+                        <Link to><i className="bi bi-twitter" /></Link>
+                        <Link to><i className="bi bi-facebook" /></Link>
+                        <Link to><i className="bi bi-instagram" /></Link>
+                        <Link to><i className="bi bi-linkedin" /></Link>
                       </div>
                     </div>
                     <div className="member-info">
@@ -854,10 +860,10 @@ function Main() {
                     <div className="member-img">
                       <img src={Team3} className="img-fluid" alt="" />
                       <div className="social">
-                        <a href><i className="bi bi-twitter" /></a>
-                        <a href><i className="bi bi-facebook" /></a>
-                        <a href><i className="bi bi-instagram" /></a>
-                        <a href><i className="bi bi-linkedin" /></a>
+                        <Link to><i className="bi bi-twitter" /></Link>
+                        <Link to><i className="bi bi-facebook" /></Link>
+                        <Link to><i className="bi bi-instagram" /></Link>
+                        <Link to><i className="bi bi-linkedin" /></Link>
                       </div>
                     </div>
                     <div className="member-info">
@@ -872,10 +878,10 @@ function Main() {
                     <div className="member-img">
                       <img src={Team4} className="img-fluid" alt="" />
                       <div className="social">
-                        <a href><i className="bi bi-twitter" /></a>
-                        <a href><i className="bi bi-facebook" /></a>
-                        <a href><i className="bi bi-instagram" /></a>
-                        <a href><i className="bi bi-linkedin" /></a>
+                        <Link to><i className="bi bi-twitter" /></Link>
+                        <Link to><i className="bi bi-facebook" /></Link>
+                        <Link to><i className="bi bi-instagram" /></Link>
+                        <Link to><i className="bi bi-linkedin" /></Link>
                       </div>
                     </div>
                     <div className="member-info">
@@ -923,7 +929,7 @@ function Main() {
                     <div className="post-img"><img src={Blog1} className="img-fluid" alt="" /></div>
                     <span className="post-date">Tue, September 15</span>
                     <h3 className="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-                    <a href="blog-singe.html" className="readmore stretched-link mt-auto"><span>Read More</span><i className="bi bi-arrow-right" /></a>
+                    <Link to="blog-singe.html" className="readmore stretched-link mt-auto"><span>Read More</span><i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-4">
@@ -931,7 +937,7 @@ function Main() {
                     <div className="post-img"><img src={Blog2} className="img-fluid" alt="" /></div>
                     <span className="post-date">Fri, August 28</span>
                     <h3 className="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                    <a href="blog-singe.html" className="readmore stretched-link mt-auto"><span>Read More</span><i className="bi bi-arrow-right" /></a>
+                    <Link to="blog-singe.html" className="readmore stretched-link mt-auto"><span>Read More</span><i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-4">
@@ -939,7 +945,7 @@ function Main() {
                     <div className="post-img"><img src={Blog3} className="img-fluid" alt="" /></div>
                     <span className="post-date">Mon, July 11</span>
                     <h3 className="post-title">Quia assumenda est et veritatis aut quae</h3>
-                    <a href="blog-singe.html" className="readmore stretched-link mt-auto"><span>Read More</span><i className="bi bi-arrow-right" /></a>
+                    <Link to="blog-singe.html" className="readmore stretched-link mt-auto"><span>Read More</span><i className="bi bi-arrow-right" /></Link>
                   </div>
                 </div>
               </div>
