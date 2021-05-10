@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from "react-router-dom";
+
 
 function Footer() {
     return (
@@ -24,36 +26,36 @@ function Footer() {
                     <div className="container">
                         <div className="row gy-4">
                             <div className="col-lg-5 col-md-12 footer-info">
-                                <a href="index.html" className="logo d-flex align-items-center">
+                                <Link to="index.html" className="logo d-flex align-items-center">
                                     <img src="assets/img/logo.png" alt="" />
                                     <span>FlexStart</span>
-                                </a>
+                                </Link>
                                 <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                                 <div className="social-links mt-3">
-                                    <a href="#" className="twitter"><i className="bi bi-twitter" /></a>
-                                    <a href="#" className="facebook"><i className="bi bi-facebook" /></a>
-                                    <a href="#" className="instagram"><i className="bi bi-instagram bx bxl-instagram" /></a>
-                                    <a href="#" className="linkedin"><i className="bi bi-linkedin bx bxl-linkedin" /></a>
+                                    <Link to="#" className="twitter"><i className="bi bi-twitter" /></Link>
+                                    <Link to="#" className="facebook"><i className="bi bi-facebook" /></Link>
+                                    <Link to="#" className="instagram"><i className="bi bi-instagram bx bxl-instagram" /></Link>
+                                    <Link to="#" className="linkedin"><i className="bi bi-linkedin bx bxl-linkedin" /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-2 col-6 footer-links">
                                 <h4>Useful Links</h4>
                                 <ul>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Home</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">About us</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Services</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Terms of service</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Privacy policy</a></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Home</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">About us</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Services</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Terms of service</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Privacy policy</Link></li>
                                 </ul>
                             </div>
                             <div className="col-lg-2 col-6 footer-links">
                                 <h4>Our Services</h4>
                                 <ul>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Web Design</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Web Development</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Product Management</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Marketing</a></li>
-                                    <li><i className="bi bi-chevron-right" /> <a href="#">Graphic Design</a></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Web Design</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Web Development</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Product Management</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Marketing</Link></li>
+                                    <li><i className="bi bi-chevron-right" /> <Link to="#">Graphic Design</Link></li>
                                 </ul>
                             </div>
                             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
@@ -82,7 +84,7 @@ function Footer() {
             </div>
                 </div>
             </footer>{/* End Footer */}
-            <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short" /></a>
+            <Link to="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short" /></Link>
         </div>
     )
 }
