@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/img/logo.png'
+import Logo from '../assets/img/logonew.png'
 import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 
@@ -20,8 +20,8 @@ function Header() {
             <header id="header" className="header fixed-top">
                 <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
                     <Link to="/" className="logo d-flex align-items-center">
-                        <img src={Logo} alt="" />
-                        <span>FlexStart</span>
+                        <img src={Logo} alt=""/>
+                        <span>SMYM</span>
                     </Link>
                     <nav id="navbar" className="navbar">
                         <ul>

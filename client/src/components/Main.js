@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import '../assets/aos/aos.css'
 import AOS from "aos";
 
-import HeroImg from '../assets/img/hero-img.png'
+import HeroImg from '../assets/img/jesus.jpg'
 import AboutImg from '../assets/img/about.jpg'
 import Img1 from '../assets/img/values-1.png'
 import Img2 from '../assets/img/values-2.png'
@@ -68,12 +68,12 @@ function Main() {
           <div className="container">
             <div className="row">
               <div className="col-lg-6 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-                <h2 data-aos="fade-up" data-aos-delay={400}>We are team of talented designers making websites with Bootstrap</h2>
+                <h1 data-aos="fade-up">Syro Malabar Youth Movement</h1>
+                <h2 data-aos="fade-up" data-aos-delay={400}>Syro Malabar church is blessed with youth. There are more than 14 lakhs of youth in ..</h2>
                 <div data-aos="fade-up" data-aos-delay={600}>
                   <div className="text-center text-lg-start">
-                    <Link to="#about" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                      <span>Get Started</span>
+                    <Link to="/about" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                      <span>Read More</span>
                       <i className="bi bi-arrow-right" />
                     </Link>
                   </div>
